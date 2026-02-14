@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: transparent;
+    transition: 0.3s ease;
+    z-index: 1000;
+  }
+  
+  /* Navbar on scroll */
+  nav.scrolled {
+    background: #222;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Menu */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  /* Hover effect */
+  .nav-links a:hover {
+    color: #00c3ff;
+  }
+  
+  /* Hero section */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Extra content */
+  .content {
+    height: 120vh;
+    background: #f4f4f4;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
